@@ -120,6 +120,9 @@ export const Load = {
         Math.ne = (a: number, b: number): boolean => a !== b;
         Math.ternary = (condition: boolean | number, ifTrue: number, ifFalse: number): number =>
             condition ? ifTrue : ifFalse;
+        Math.floorToValue = (test: number, ...values: number[]) =>
+            Math.max(Math.min(...values), ...values.filter((v) => test >= v));
+        Math.floorToIndex = (test: number, ...values: number[]) => values.indexOf(Math.floorToValue(test, ...values));
 
         // Mystery Man but with a drop shadow
         Actor.DEFAULT_ICON = "systems/pf2e/icons/default-icons/mystery-man.svg";

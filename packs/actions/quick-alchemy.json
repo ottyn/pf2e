@@ -18,7 +18,14 @@
             "remaster": true,
             "title": "Pathfinder Player Core 2"
         },
-        "rules": [],
+        "rules": [
+            {
+                "key": "CraftingAbility",
+                "priority": 1,
+                "resource": "versatile-vials",
+                "slug": "quick-alchemy"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": [

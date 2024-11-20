@@ -42,14 +42,18 @@
                 "value": 1
             },
             {
+                "itemUUID": "Compendium.pf2e.equipment-srd.Item.Versatile Vial",
+                "key": "SpecialResource",
+                "level": "floorToValue(@actor.level, 1, 4, 12, 18)",
+                "max": 4,
+                "slug": "versatile-vials"
+            },
+            {
                 "craftableItems": [
                     "item:trait:alchemical"
                 ],
-                "isAlchemical": true,
-                "isDailyPrep": true,
                 "key": "CraftingAbility",
-                "maxItemLevel": 1,
-                "slug": "alchemist"
+                "slug": "quick-alchemy"
             },
             {
                 "key": "GrantItem",

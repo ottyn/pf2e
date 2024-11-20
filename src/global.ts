@@ -255,6 +255,16 @@ declare global {
             lte: (a: number, b: number) => boolean;
             ne: (a: number, b: number) => boolean;
             ternary: (condition: boolean | number, ifTrue: number, ifFalse: number) => number;
+            /**
+             * Returns the highest number that the test number is equal or greater to,
+             * or the lowest number if none of them.
+             */
+            floorToValue: (test: number, ...values: number[]) => number;
+            /**
+             * Returns the index of the highest number that the test number is equal or greater to,
+             * or of the lowest number if none of them.
+             */
+            floorToIndex: (test: number, ...values: number[]) => number;
         }
     }
 
